@@ -1,0 +1,432 @@
+/*控制右边导航的额颜色*/
+#fp-nav ul li a span {
+    background-color: red;
+}
+/*第一屏*/
+.s1 {
+    background: #f9dd67 url("../images/t1fpyqfltdxxaiulhh-990-600.png") bottom center no-repeat;
+}
+
+.section-main {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    border: 1px solid #000;
+    position: relative;
+}
+/*第一屏的商品图片*/
+.s1-goods {
+    position: absolute;
+    left: 50%;
+    margin-left: -412px;
+    bottom: 150px;
+}
+
+/*沙发*/
+.s1-sofa {
+    position: absolute;
+    left: 300px;
+    bottom: 330px;
+    /*最终状态*/
+    /*bottom: 356px;*/
+    /*animation: ani-s1-sofa 2s infinite linear;*/
+    /*指定一个动画的名称*/
+    animation-name: ani-s1-sofa;
+    /*动画的持续时间*/
+    animation-duration: 3s;
+    /*动画的执行次数*/
+    animation-iteration-count: infinite;
+    /*速度曲线*/
+    /*速度曲线一般只区分匀速和不匀速即可，因为页面效果一般时间比较短，很难区分出速度曲线的变化*/
+    animation-timing-function: linear;
+}
+
+@keyframes ani-s1-sofa {
+    50% {
+        bottom: 356px;
+    }
+}
+
+/*气球*/
+.s1-ball {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    /*top: 190px;*/
+    animation-name: ani-s1-ball;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ani-s1-ball {
+    50% {
+        top: 190px;
+    }
+}
+
+/*第二屏*/
+.s2 {
+    background: #84a2d4 url("../images/t1zdgpfi8exxca6rfn-2000-600.png") bottom center no-repeat;
+}
+
+.s2-search-01,.s2-search-02 {
+    position: absolute;
+    right: -150px;
+    bottom: 280px;
+    display: none;
+
+}
+.s2-search-02 {
+    right: 360px;
+}
+
+.s2-sofa {
+    position: absolute;
+    right: 290px;
+    bottom: 210px;
+    width: 100px;
+    display: none;
+    /*最终大小是自己本身的大小*/
+    /*width: 441px;*/
+}
+
+.s2-word-01,.s2-word-02 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 550px;
+}
+.s2-word-02 {
+    display: none;
+}
+.s2-mask {
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    left: 380px;
+    bottom: 320px;
+    background-color: #fff;
+    display: none;
+}
+
+/*第三屏*/
+.s3 {
+    background:#ef674d url("../images/main.png") bottom center no-repeat ;
+}
+
+.s3-size-01,.s3-size-02 {
+    position: absolute;
+    right: 165px;
+    bottom: 190px;
+}
+.s3-size-02 {
+    display: none;
+}
+
+.s3-shop-cart-01 , .s3-shop-cart-02 {
+    position: absolute;
+    right: 240px;
+    bottom: 100px;
+}
+
+.s3-shop-cart-02 {
+    display: none;
+}
+
+.s3-sofa {
+    position: absolute;
+    /*开始状态*/
+    /*bottom: 一个页面的高度 + 340px;*/
+    /*left: 385px;*/
+    /*width: 100px;*/
+    /*最终状态*/
+    /*bottom: 250px;*/
+    /*left: 260px;*/
+}
+
+/*第四屏*/
+.s4 {
+    background:#ffeedd url("../images/t1iresfnxaxxca6rfn-2000-600.png") bottom center no-repeat;
+}
+
+.s4-cloud {
+    position: absolute;
+    top: 100px;
+    transform: translateX(100%);
+    animation: ani-s4-clound 30s infinite linear;
+}
+
+@keyframes ani-s4-clound {
+    50% {
+        transform: translateX(-100%);
+    }
+}
+
+.s4-p-shop-cart {
+    position: absolute;
+    bottom: 10px;
+    /**
+        后面会对这个父盒子进行位移
+            1 操作left
+            2 操作transform
+    */
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    left: 296px;
+}
+.s4-sofa {
+    position: absolute;
+    /*开始状态*/
+    /*bottom: 浏览器高度+210;*/
+    /*left : -35*/
+    /*最终状态*/
+    /*bottom: 200px;*/
+    /*left: 150px;*/
+    display: none;
+}
+.s4-shop-cart {
+    position: relative;
+}
+
+
+.s4-computer {
+    position: absolute;
+    left: 50%;
+    bottom: 200px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.s4-address {
+    position: absolute;
+    left: 50%;
+    bottom: 370px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.s4-word-01,.s4-word-02{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 500px;
+}
+.s4-word-02 {
+    display: none;
+}
+
+/*第五屏*/
+.s5 {
+    background: url("../images/t1yisqfa4exxa3gmkg-2000-1500.png");
+    overflow: hidden;
+}
+
+.s5-card {
+    position: absolute;
+    bottom: 200px;
+    left: 40px;
+}
+
+.s5-mouse-01,.s5-mouse-02{
+    position: absolute;
+    top: -265px;
+    right: 50px;
+}
+.s5-mouse-02 {
+    display: none;
+}
+
+.s5-hand {
+    position: absolute;
+    bottom: -375px;
+    /*最终状态*/
+    /*bottom: 0;*/
+    right: 115px;
+}
+
+.s5-sofa {
+    position: absolute;
+    display: none;
+    /*最终状态*/
+    /*bottom: 110px;*/
+    /*left: 100px;*/
+}
+
+.s5-order {
+    position: absolute;
+    bottom: 280px;
+    left: 150px;
+    /*最终状态*/
+    /*bottom: 400px;*/
+}
+
+.s5 .section-main {
+    /*
+     这个是旋转的文字的父元素
+    *  加视距属性才能看的出3d效果
+    */
+    perspective: 1000px;
+}
+
+.s5-word {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transition: all 3s linear;
+    display: none;
+}
+
+/*
+    如果希望3d的动画能看出3d的效果
+        1 必要条件就是  视距  - 必须给父元素加上视距属性
+
+*/
+
+.test {
+    transform: translateZ(400px) translateY(50px) rotateY(360deg);
+}
+
+/*第六屏*/
+.s6 {
+    background: #85d9ed url("../images/t1dvj.fn0gxxb0_fua-2500-600.png") bottom no-repeat;
+}
+
+.s6-car {
+    position: absolute;
+    bottom: 0;
+    right: 55%;
+}
+
+.s6-add {
+    position: absolute;
+    right: -93px;
+    top: -56px;
+    display: none;
+}
+
+.s6-box {
+    position: absolute;
+    /*初始位置*/
+    /*right: 100%;*/
+    /*top: 100px;*/
+    /*最终状态*/
+    /*right: 60%;*/
+}
+
+.s6-sofa {
+    position: absolute;
+    /*最终状态*/
+    /*top: 120px;*/
+    /*right: 62%;*/
+    /*width: 70px;*/
+}
+
+.s6-word {
+    position: absolute;
+    left: -308px;
+    top: 100px;
+    /*最终状态*/
+    /*left: 30%;*/
+}
+
+.s6-man {
+    /*初始状态*/
+    position: absolute;
+    right: 55%;
+    bottom: 120px;
+    width: 0;
+}
+
+.s6-girl {
+    /*初始状态*/
+    position: absolute;
+    right: 300px;
+    bottom: 120px;
+    width: 0;
+    /*最终状态：*/
+    /*width: 87*/
+    /*right : 450*/
+}
+
+.s6-door{
+    position: absolute;
+    bottom: 116px;
+    right: 284px;
+    display: none;
+}
+
+
+.s6-word-02 {
+    position: absolute;
+    bottom: 400px;
+    right: 500px;
+    display: none;
+}
+
+/*第七屏*/
+.s7 {
+    background: url("../images/t1wf1tfctaxxa3gmkg-2000-1500.png") center bottom;
+}
+
+.s7-star {
+
+    height: 20px;
+    position: absolute;
+    bottom: 437px;
+    left: 204px;
+    width: 0;
+    overflow: hidden;
+    /*最终状态*/
+    /*width: 122px;*/
+}
+.s7-star > img {
+    width: 100px;
+}
+
+.s7-haoping{
+    position: absolute;
+    bottom: 385px;
+    left: 215px;
+    display: none;
+}
+
+/*第八屏*/
+.s8 {
+    background: url("../images/ksgw.png");
+}
+
+.s8-btn-01,.s8-btn-02{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.s8-btn-02 {
+    display: none;
+}
+
+.s8-hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*公共部分*/
+.next {
+    position: fixed;
+    right: 10%;
+    bottom: 100px;
+}
+.goto-index {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+}
+
+.again {
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    transform: translateY(-50%);
+}
